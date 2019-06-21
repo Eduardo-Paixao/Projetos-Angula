@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>Produtos</h2>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Preço</th>
+        <th scope="col">Quantidade</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+    
+      <tr *ngFor="let x of produtos">
+        <td>{{x.id}}</td>
+        <td>{{x.nome}}</td>
+        <td>{{x.preco}}</td>
+        <td>{{x.qtd}}</td>
+        <td><button (click)="excluirProduto(x.id)">D</button></td>
+        <td><button (click)="alterarProduto(x)" onclick="location.href = '/atualizar'">A</button></td>
+        
+      </tr>
+    </tbody>
+  </table>
+  <button type="submit" class="btn btn-success" (click)="cadastrarProduto()">Novo Produto</button>
+</div>
+

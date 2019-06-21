@@ -1,0 +1,24 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Municipio</th>
+      <th>nomeOficial</th>
+      <th>volumeAtual</th>
+      <th>capacidade</th>
+      <th>anoConstrucao</th>
+      <th>id</th>
+    </tr>  
+  </thead>
+  <tbody> 
+  <tr *ngFor="let x of acudes">
+  <td>{{x.nome}}</td>
+  <td>{{x.municipio}}</td>
+  <td>{{x.nomeOficial}}</td>
+  <td>{{x.volumeAtual}}</td>
+  <td>{{x.capacidade}}</td>
+  <td>{{x.anoConstrucao}}</td>
+  <td>{{x.id}}</td>
+  </tr>
+  </tbody>
+</table>

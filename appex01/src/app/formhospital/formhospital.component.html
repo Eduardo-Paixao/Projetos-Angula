@@ -1,0 +1,17 @@
+<h2>
+  Novo Hospital
+</h2>
+<form (ngSubmit) = "enviarDados()">
+  <div>
+    <label for="id">id</label>
+    <input type="text" id="id" [(ngModel)] = "hospital.id" name="id">
+  </div>
+  <br>
+  <div>
+    <label for="nome">nome</label>
+    <input type="text" id="nome" [(ngModel)] = "hospital.nome" name="nome">
+  </div>
+  <br>
+  <button type="submit">Cadastrar</button>
+</form>
+

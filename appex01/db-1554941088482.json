@@ -1,0 +1,19 @@
+{
+  "hospitais": [
+    {
+      "id": 1,
+      "nome": "Hospital 1",
+      "bairro": "Bairro 1"
+    },
+    {
+      "id": 2,
+      "nome": "Hospital 2",
+      "bairro": "Bairro 2"
+    },
+    {
+      "id": 3,
+      "nome": "Hospital 3",
+      "bairro": "Bairro 3"
+    }
+  ]
+}
